@@ -1,0 +1,379 @@
+/* 
+
+Página do jogo Overwatch feita por um fã.
+Página criada como parte do meu portfólio.
+Overwatch e tudo o que é relacionado pertence à Blizzard. 
+Programado por: Vanderlei Antedomenico Junior
+Contato: vantedome@gmail.com 
+Data de conclusão: 19/12/2019 
+
+   */
+
+:root{
+    --cinza: #D2D2D2;
+    --laranja: #FCA72A;
+    --preto: #000;
+    --branco: #fff
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+    padding-top: 30px;
+}
+
+.logo a img{
+    width: 80px;
+}
+
+nav ul{
+    position: absolute;
+    top:-270px;
+    text-align: center;
+    background-color: var(--preto);
+    width: 100vw;
+    transition: top 1s ease;
+}
+
+.nav-active{
+    top: 12vh;
+}
+
+nav ul li{
+    padding: 15px 0;
+}
+
+nav ul li a{
+    display: block;
+    color: var(--branco);
+    font-size: 14px;
+    width: 100%;
+}
+
+
+.burger:hover{
+    cursor: pointer;
+}
+
+.burger div{
+    width: 35px;
+    height: 4px;
+    margin: 7px 0;
+    background-color: var(--preto);
+    transition: all .3s ease;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/* MAIN */
+
+main{
+    padding: 0 20px;
+}
+
+.page-title{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.page-title h2{
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 2em;
+}
+
+.page-title h1{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+article{
+    background-color: var(--cinza);
+    margin-top: 50px;
+}
+article img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+article h3{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    
+}
+
+article p{
+    padding: 5px;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: var(--preto);
+    color: var(--cinza);
+    margin-top: 60px;
+    padding: 10px 0 60px 20px;
+    width: 100vw;
+}
+
+footer p{
+    padding: 10px 0;
+}
+
+
+/* Página de heróis */
+
+.galeria h2{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 50px 0;
+    background-color: var(--cinza);
+    padding: 10px 0;
+}
+.heroes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.avatar img{
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--cinza);
+
+}
+
+
+.avatar img:hover{
+    border: 5px solid var(--laranja);
+}
+
+.avatar h3{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+/* Perfil */
+
+.heroi-title{
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.description .avatar{
+    height: 180px;
+    width: 180px;
+    margin: 50px auto;
+}
+
+.description .full{
+    display: none;
+}
+
+.description p{
+    line-height: 1.5;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+
+.info-box h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+.info-box p span{
+    font-weight: bold;
+    text-align: justify;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media screen and (min-width: 1020px){
+
+    header,
+    main, 
+    .wrapper{
+        width: 900px;
+        margin: 0 auto;
+    }
+  
+    nav ul{
+        background-color: var(--branco);
+        position: initial;
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    nav ul li a{
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+        color: var(--preto);
+        font-size: 14px;
+        width: 100%;
+    }
+
+    nav ul li a:hover{
+        background-color: var(--laranja);
+        color: white;
+    }
+    
+
+    .burger{
+        display: none;
+    }
+
+    article h3{
+        padding: 15px;
+    }
+    
+    article p{
+        padding: 15px;
+    }
+
+    .avatar{
+        margin: 0 30px;
+    }
+
+    /* Perfil */
+
+    .wrapper-heroi{
+        display: flex;
+    }
+
+    .heroi-title{
+        margin-bottom: 50px;
+    }
+
+    .description{
+        width: 80%;
+    }
+
+    .description .avatar{
+        display: none;
+    
+    }
+    
+    .description .full{
+        display: block;
+        width: 20%;
+        float: left;
+        margin-right: 30px;
+    }
+
+   .info-box{
+       padding-left: 50px;
+   }
+
+   .info-box h2{
+       background-color: var(--cinza);
+       padding: 10px 0;
+       letter-spacing: 5px;
+   }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+    header,
+    main, 
+    .wrapper{
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .logo a img{
+        width: 120px;
+    }
+
+    nav ul{
+        width: 50%;
+    }
+
+    footer p{
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .avatar{
+        /* margin: 0 30px; */
+    }
+}
+
+
+
