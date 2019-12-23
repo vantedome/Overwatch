@@ -1,8 +1,0 @@
-Overwatch site.
-
---- CORES ---
-
-Cinza: #D2D2D2
-Laranja: #FCA72A
-Preto: #000
-Branco: #fff
