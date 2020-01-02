@@ -56,6 +56,7 @@ nav ul{
 
 nav ul li{
     padding: 15px 0;
+    margin: 0 5px;
 }
 
 nav ul li a{
@@ -225,6 +226,9 @@ footer p{
     text-transform: uppercase;
     font-size: 1.3em;
     margin: 20px 0;
+    background-color: var(--cinza);
+    padding: 10px 0;
+    letter-spacing: 5px;
 }
 
 .info-box p span{
@@ -234,9 +238,36 @@ footer p{
 }
 
 
+.jogo-img{
+    width: 90vw;
+    margin-top: 30px;
+}
 
+.jogo article{
+    background-color: #fff;
+}
 
+.jogo article h3{
+    text-align: center;
+    background-color: var(--cinza);
+    margin-bottom: 30px;
+}
 
+.maps article{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.maps article a img{
+    padding: 10px;
+    width: 380px;
+}
+
+.maps article a h3{
+    text-align: center;
+    padding-bottom: 15px;
+}
 
 
 
@@ -319,18 +350,60 @@ footer p{
         margin-right: 30px;
     }
 
-   .info-box{
-       padding-left: 50px;
-   }
+    .info-box{
+        padding-left: 50px;
+    }
 
-   .info-box h2{
-       background-color: var(--cinza);
-       padding: 10px 0;
-       letter-spacing: 5px;
-   }
+    .jogo-img{
+        display: initial;
+        margin-top: 60px;
+        width: 100%;
+    }
 
+    .jogo article h3{
+        height: 150px;
+        font-size: 2em;
+        color: var(--laranja);
+        line-height: 150px;
+        letter-spacing: 5px;
+    }
 
+    .geral h3{
+        background-image: url(../img/geral.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+    .tanks h3{
+        background-image: url(../img/tanks.jpg);
+    }
+
+    .dps h3{
+        background-image: url(../img/dps.jpg);
+    }
+
+    .support h3{
+        background-image: url(../img/support.jpg);
+    }
+
+    .maps{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .maps article{
+        width: 280px;
+        margin: 10px 3px;
+    }
+
+    .maps article a img{
+        width: 260px;
+    }
+
+    .maps article:hover{
+        box-shadow: 10px 10px 5px var(--laranja);
+    }
 
 }
 
