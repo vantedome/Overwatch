@@ -269,6 +269,37 @@ footer p{
     padding-bottom: 15px;
 }
 
+/* Formulário */
+
+.contato form{
+    display: flex;
+    flex-direction: column;
+}
+
+.name input,
+.email input,
+.msg textarea{
+    width: 95%;
+    margin: 10px 0;
+    resize: none;
+    background-color: var(--cinza);
+    border: 1px transparent;
+    border-radius: 3px;
+    outline-color: var(--laranja);
+}
+
+.name input,
+.email input{
+    height: 30px;
+}
+
+input[type='submit']{
+    height: 50px;
+    width: 50%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 
 
@@ -403,6 +434,31 @@ footer p{
 
     .maps article:hover{
         box-shadow: 10px 10px 5px var(--laranja);
+    }
+
+    /* Formulário */
+
+    .contato form{
+        display: initial;
+    }
+
+    .nome-mail{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .name, .email{
+        width: 50%;
+    }
+    
+    .msg textarea{
+        width: 97%;
+    }
+
+    input[type='submit']{
+        width: 100px;
+        height: 30px;
     }
 
 }
